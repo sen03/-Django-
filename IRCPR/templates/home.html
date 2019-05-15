@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block title  %}首页{% endblock %}
+{% load staticfiles %}
+{% block content %}
+    <div class="container" >
+        <div class="row text-center vertical-middle-sm" style="margin-top:10px;">
+            <h1>智能机器人创客空间</h1>
+        </div>
+        <div class="container row make-bigger" style="margin-top:25px;">
+            <a  href="{% url 'create:create_notice' %}">
+                <img src="{% static '/images/room.jpg' %}" width="250px" height="250px"></a>
+            <a href="{% url 'create:technology_column' %}" style="margin-left: 20px;">
+                <img src="{% static '/images/technology.jpg' %}" width="250px" height="250px"></a>
+            <a href="{% url 'create:brand' %}"style="margin-left: 20px;">
+                <img src="{% static '/images/brand.jpg' %}" width="250px" height="250px"></a>
+            <a href="{% url 'article:article_titles' %}"style="margin-left: 20px;">
+                <img src="{% static '/images/article.jpg' %}" width="250px" height="250px"></a>
+        </div>
+        <div class="container row" style="margin-bottom:50px;margin-top: 10px">
+            <a  href="{% url 'create:create_notice' %}" style="font-size:30px; margin-left: 60px;">创客空间</a>
+            <a href="{% url 'create:technology_column' %}" style="font-size:30px; margin-left: 150px;">相关技术</a>
+            <a href="{% url 'create:brand' %}"style="font-size:30px; margin-left: 150px;">相关品牌</a>
+            <a href="{% url 'article:article_titles' %}"style="font-size:30px; margin-left: 150px;">文章列表</a>
+        </div>
+    </div>
+    <div>
+        <div id="background-image" style="background-image: url(/static/images/background/background-home.jpg);"></div>
+    </div>
+{% endblock %}

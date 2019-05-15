@@ -1,0 +1,32 @@
+{% load staticfiles %} 
+<div class="container">   
+    <nav class="navbar navbar-default" role="navigation"> 
+        <div class="navbar-header">
+            <a href="{% url 'home' %}">
+                <img width="80px" src="{% static 'images/avatar.gif' %}">
+            </a> 
+        </div>
+        <div>
+            <ul class="nav navbar-nav" role="tablist">
+                <li><a href="{% url 'home' %}">首页</a></li>
+                <li><a href="{% url 'article:article_titles' %}">全部文章</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right" style="margin-right:10px">
+                <li>
+                        <div class="dropdown" style="margin-top:8px">
+                            <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu" data-toggle="dropdown">
+                                {{ user.username }}<span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a href="{% url 'account:password_change' %}">修改密码</a> </li>
+                                <li><a href="{% url 'account:my_information' %}">个人信息</a> </li>
+                                <li><a href="{% url 'account:user_logout' %}">注销</a> </li>
+                            </ul>
+                        </div>
+                    </li>
+            </ul>
+        </div>    
+    </nav>              
+</div>
+<script src="{% static 'js/jquery-1.12.4.js' %}"></script>
+<script src="{% static 'js/bootstrap.js' %}"></script>

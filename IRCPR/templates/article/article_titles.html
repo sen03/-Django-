@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% load article_tags %}
+{% block title %} 全部文章 {% endblock %}
+{% block content %}
+<div style="background-image: url(/static/images/background/background-article.jpg);">
+<div class="row text-center vertical-middle-sm">
+    <h1>阅读，扩展知识，提升自我</h1>
+    <p>这里已经有{% total_articles %}篇文章供你阅读</p> 
+</div>
+<div class="container">
+    {% for article in articles %}
+    <div class="list-group">
+        <a href="{{article.get_url_path}}" class="list-group-item active" style="width: 1000px">
+            <h4 class="list-group-item-heading">{{article.title}}</h4>
+        </a>
+        <p class="list-group-item-text">作者:<a href="{% url 'article:author_articles' article.author.username %}">{{article.author.username}}</a></p>
+        <p class="list-group-item-text">概要:{{article.body| markdown |slice:'70'| linebreaks }}</p>
+        <br />
+    </div>
+    {% endfor %}
+{% include "article/pagination.html" %}
+</div>
+</div>
+{% endblock %}

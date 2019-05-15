@@ -1,0 +1,33 @@
+{% extends "create/technology/technology-base.html" %}
+
+{% load staticfiles %}
+
+{% block title %}相关技术{% endblock %}
+
+{% block content %}
+    <div class="layui-body" style="color:white; margin-top:50px; margin-left: 110px; margin-right: 90px">
+        <br />
+        <h2 class="text-center">智能机器人自主导航</h2>
+        <div style="font-size:20px; padding: 15px;">可以说，自主定位导航技术已经成为机器人产品的核心和焦点之一。
+            自主导航，从大的方面来讲包括局域导航和全局导航两部分。
+            局域导航是指通过视觉、雷达、超声波等传感器实时获取当前环境信息，提取数据融合后的特征，经智能算法处理后实现当前可通行区域的判断和多目标跟踪；
+            全局导航主要指利用GPS提供的全局导航数据进行全局路径规划，并实现全电子地图范围内的路径导航。</div>
+        <div style="font-size:20px; padding: 15px;">目前，视觉和雷达是局部自主导航时采用的两种最主要的传感器。</div>
+        <div style="font-size:20px; padding: 15px;"></div>
+        <br /><br /><br />
+    </div>
+
+    <div class="layui-footer" style="color:white; margin-top:500px; margin-left: 700px;">
+        <p>智能机器人相关技术介绍</p>
+    </div>
+
+{#</div>#}
+{#<script src="/static/layui/layui.js" charset="utf-8"></script><script>#}
+{#//JavaScript代码区域#}
+{#layui.use('element', function(){#}
+{#  var element = layui.element;#}
+{##}
+{#});#}
+{#</script>#}
+
+{% endblock %}

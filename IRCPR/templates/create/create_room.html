@@ -1,0 +1,240 @@
+{% extends "base.html" %}
+
+{% load staticfiles %}
+
+{% block title %}创造空间{% endblock %}
+
+{% block content %}
+<link rel="stylesheet" href="{% static 'layui/css/layui.css' %}">
+<fieldset class="layui-elem-field layui-field-title" style="margin-top: 30px;">
+  <legend>背景选择</legend>
+</fieldset>
+
+<div class="layui-tab">
+  <ul class="layui-tab-title">
+    <li id="b1">黑</li>
+    <li id="b2">红</li>
+    <li id="b3">紫</li>
+    <li id="b4">蓝</li>
+    <li id="b5">黄</li>
+    <li id="b6">绿</li>
+    <li></li><li></li><li></li><li></li><li></li>
+    <li id="b7">流星</li>
+    <li id="b8">海洋</li>
+    <li id="b9">天空</li>
+    <li id="b10">robot1</li>
+    <li id="b11">robot2</li>
+    <li id="b12">robot3</li>
+  </ul>
+{#  <div class="layui-tab-content">#}
+{#    <div class="layui-tab-item layui-show"><img src="/static/images/create-room-background/red.jpg" style="width: 200px; height: 200px;"><br></div>#}
+{#    <div class="layui-tab-item"><img src="/static/images/create-room-background/black.jpg" style="width: 200px; height: 200px;"></div>#}
+{#    <div class="layui-tab-item"><img src="/static/images/create-room-background/purple.jpg" style="width: 200px; height: 200px;"></div>#}
+{#    <div class="layui-tab-item"><img src="/static/images/create-room-background/blue.jpg" style="width: 200px; height: 200px;"></div>#}
+{#    <div class="layui-tab-item"><img src="/static/images/create-room-background/yellow.jpg" style="width: 200px; height: 200px;"></div>#}
+{#    <div class="layui-tab-item"><img src="/static/images/create-room-background/green.jpg" style="width: 200px; height: 200px;"></div>#}
+{#  </div>#}
+</div>
+
+<br><br><br><br><br>
+
+<fieldset class="layui-elem-field layui-field-title" style="margin-top: 30px;">
+  <legend>智能机器人的组成</legend>
+</fieldset>
+<div class="layui-tab">
+  <ul class="layui-tab-title">
+    <li id="">传感器</li>
+    <li id="">机械臂</li>
+    <li id="">3</li>
+    <li id="">4</li>
+    <li id="">5</li>
+    <li id="">6</li>
+  </ul>
+  <div class="layui-tab-content">
+    <div class="layui-tab-item layui-show">
+        <button type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="right" style="margin-left: 20px"
+                data-content="常用的超声波传感器由压电晶片组成，既可以发射超声波，也可以接收超声波。小功率超声探头多作探测作用。它有许多不同的结构，可分直探头（纵波）、斜探头（横波）、表面波探头（表面波）、兰姆波探头（兰姆波）、双探头（一个探头发射、一个探头接收）等。">超声波传感器</button>
+
+        <button type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="right" style="margin-left: 50px"
+                data-content="压力传感器(Pressure Transducer)是能感受压力信号，并能按照一定的规律将压力信号转换成可用的输出的电信号的器件或装置。压力传感器通常由压力敏感元件和信号处理单元组成。按不同的测试压力类型，压力传感器可分为表压传感器、差压传感器和绝压传感器。">压力传感器</button>
+
+        <button type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="right" style="margin-left: 50px"
+                data-content="温度传感器（temperature transducer）是指能感受温度并转换成可用输出信号的传感器。温度传感器是温度测量仪表的核心部分，品种繁多。按测量方式可分为接触式和非接触式两大类，按照传感器材料及电子元件特性分为热电阻和热电偶两类。">温度传感器</button>
+
+        <button type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="right" style="margin-left: 50px"
+                data-content="摄像头可分为数字摄像头和模拟摄像头两大类。数字摄像头可以将视频采集设备产生的模拟视频信号转换成数字信号，进而将其储存在计算机里。模拟摄像头捕捉到的视频信号必须经过特定的视频捕捉卡将模拟信号转换成数字模式，并加以压缩后才可以转换到计算机上运用。数字摄像头可以直接捕捉影像，然后通过串、并口或者USB接口传到计算机里。电脑市场上的摄像头基本以数字摄像头为主，而数字摄像头中又以使用新型数据传输接口的USB数字摄像头为主，市场上可见的大部分都是这种产品。">摄像头</button>
+    </div>
+    <div class="layui-tab-item">
+        <button type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="right" style="margin-left: 20px"
+        data-content="1．球坐标式机械手是一种自由度较多、用途较广的机械手。球坐标式机械手的工作范围包
+                        括一个旋转运动、两个旋转运动、两个旋转运动加一个直线运动。
+                        1、球坐标式机械手的基本动作
+                        （1）手臂上下运动，即俯仰运动。
+                        （2）手臂左右运动，即回转运动。
+                        （3）手臂前后运动，即伸缩运动。
+                        （4）手腕上下弯曲。
+                        （5）手腕左右摆。
+                        （6）手腕旋转运动。
+                        （7）手爪夹紧运动。
+                        （8）机械手整体移动。
+                        2. 球坐标式机械手的特点
+                        球坐标式机械手的特点是将手臂装在枢轴上， 枢轴又装在叉形架上， 能在垂直面内做圆弧状
+                        上下俯仰运动，它的臂可做伸缩，横向水平摆动，还可以上下摆动，工作
+                        范围和人手的动作类似。 能自动选择最合理的动作线路， 所以工效高。 另外，由于上下摆动，
+                        它的相对体积小， 而动作范围大。 以行程为 203mm工作油缸为例， 其手臂的上下移动距离就
+                        能达到 2450mm。若采用圆柱坐标式则其高度就要达到 2450mm。
+                        因为球坐标式机械手比较灵活如果考虑三维扫描设计的话可以考虑球坐标式机械手">球坐标式机械手</button>
+        <button type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="right" style="margin-left: 20px"
+        data-content="1. 关节式机械手是一种适用于靠近机体操作的传动形式。 它像人手一样有肘关节， 可实现多
+                    个自由度，动作比较灵活，适于在狭窄空间工作。
+                    2. 关节式机械手的特点
+                    关节式机械手有大臂与小臂摆动， 以及肘关节和肩关节的运动。 为具有人手操作的机能， 需
+                    要研制最合适的结构。 关节式机械手的传动机构采用齿轮式、 齿条式和摆动式。 其传动机构
+                    采用哪种形式， 主要根据工件的轻重来决定。 若按摆动式扭矩来设计， 则油缸将加大， 而装
+                    载油缸的机架也将随之加大。 特别是靠近关节式前端关节部分的重量对肩部影响很大。 传动
+                    机构在承受负荷的同时必须承受自重，因此， 传动效率低。如需要大的转动角，则宜采用摆
+                    动油缸。">关节式机械手</button>
+        <button type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="right" style="margin-left: 20px"
+        data-content="1. 直角坐标式机械手是适合于工作位置成行排列或传送带配合使用的一种机械手。它的
+                        手臂可以伸缩，左右和上下移动，按直角坐标形式 x、 y、z 3 个方向的直线进行运动。其
+                        工作范围可以是 1 个直线运动、 2 个直线运动或是 3 个直线运动。如在 x、 y、z 3 个直线
+                        运动方向上各具有 A 、 B、C 3 个回转运动，即构成 6 个自由度。
+                        2、直角坐标式机械手的优点
+                        （ 1）产量大、节拍短，能满足高速的要求。
+                        （ 2）容易与生产线上的传送带和加工装配机械相配合。
+                        （ 3）适于装箱类、多工序复杂的工作，定位容易改变。
+                        （ 4）定位精度高，可达到± 0.5mm以下，载重发生变化时不会影响精度。
+                        （5）易于实行数控，可于开环或闭环数控机械配合使用。
+                        直角坐标式机械手的缺点是作业范围较小。
+                        可以配合进行二维平面的扫描
+                        ">直角坐标式机械手</button>
+        <button type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="right" style="margin-left: 20px"
+                data-content="1. 圆柱坐标式机械手是应用最多的一种形式，它适用于搬运和测量工件。具有直观性
+                            好、结构简单、本体占用的空间较小的特点。其动作范围可分为：一个旋转运动，一个直线
+                            运动加一个不在直线运动所在平面内的旋转运动，两个直线运动加一个旋转运动。
+                            圆柱坐标式机械手的基本动作
+                            （1）手臂水平回转。
+                            （2）手臂伸缩。
+                            （3）手臂上下。
+                            （4）手臂回转动作。
+                            （5）手爪夹紧动作。
+                            2、圆柱坐标式机械手的物特征
+                            圆柱坐标式机械手的特征是垂直导柱上装有滑动套筒， 手臂装在滑动套筒上， 手臂
+                            可做上下直线运动和在水平面内做圆弧状的左右摆动。">圆柱坐标式机械手</button>
+    </div>
+    <div class="layui-tab-item">
+        <button type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="right" style="margin-left: 20px" data-content=""></button>
+    </div>
+    <div class="layui-tab-item"><img src="/static/images/create-room-background/blue.jpg" style="width: 200px; height: 200px;"></div>
+    <div class="layui-tab-item"><img src="/static/images/create-room-background/yellow.jpg" style="width: 200px; height: 200px;"></div>
+    <div class="layui-tab-item"><img src="/static/images/create-room-background/green.jpg" style="width: 200px; height: 200px;"></div>
+  </div>
+</div>
+
+<br><br><br><br><br>
+
+<h1 class="text-center">请点击选择您需要的传感器、配件</h1>
+<div class="container btn btn-primary" id="material_list">
+    <button>超声波传感器</button>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+    <button>温度传感器</button>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+    <button>摄像头</button>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+    <button>麦克风</button>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+    <button>扬声器</button>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+    <button>压力传感器</button>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+</div>
+
+{#<form action="." method="post">{% csrf_token %}#}
+{#    <textarea id="create_list" style="height: 300px; width: 300px;"></textarea>#}
+{#    <input type="submit" id="create_program" class="btn btn-primary" value="确认方案">#}
+{#</form>#}
+    <textarea id="create_list" style="height: 300px; width: 300px;"></textarea>
+    <button id="create_program" class="btn btn-primary">确认方案</button>
+
+<div class="text-center">
+    <h3 style="color: red;" id="program"></h3>
+</div><br><br><br>
+{#    {% for createroom in createroom_form %}#}
+{#    <p><strong>{{ createroom.creator }}</strong>的评论:</p>#}
+{#    <p style="margin-left:40px;">{{ createroom.creator }}</p>#}
+{#    {% empty %}#}
+{#        <p>创造列表为空</p>#}
+{#    {% endfor %}#}
+<div>
+    <div id="background-image" style="background-image: url(/static/images/background/background-brand.jpg);"></div>
+</div>
+
+<script src="{% static 'js/jquery-1.12.4.js' %}"></script>
+{#<script src="{% static 'js/bootstrap.js' %}"></script>#}
+<script src="{% static 'layui/layui.js' %}" charset="utf-8"></script>
+<script>
+layui.use('element', function(){
+  var $ = layui.jquery
+  ,element = layui.element; //Tab的切换功能，切换事件监听等，需要依赖element模块
+});
+</script>
+<script type="text/javascript">
+$("#b1").click(function (){
+    $("#background-image").css("background-image", "url(/static/images/create-room-background/black.jpg)");
+    $(document.body).css("color", "black");
+});
+$("#b2").click(function (){
+    $("#background-image").css("background-image", "url(/static/images/create-room-background/red.jpg)");
+    $(document.body).css("color", "red");
+});
+$("#b3").click(function (){
+    $("#background-image").css("background-image", "url(/static/images/create-room-background/purple.jpg)");
+    $(document.body).css("color", "purple");
+});
+$("#b4").click(function (){
+    $("#background-image").css("background-image", "url(/static/images/create-room-background/blue.jpg)");
+    $(document.body).css("color", "blue");
+});
+$("#b5").click(function (){
+    $("#background-image").css("background-image", "url(/static/images/create-room-background/yellow.jpg)");
+    $(document.body).css("color", "yellow");
+});
+$("#b6").click(function (){
+    $("#background-image").css("background-image", "url(/static/images/create-room-background/green.jpg)");
+    $(document.body).css("color", "green");
+});
+$("#b7").click(function (){
+    $("#background-image").css("background-image", "url(/static/images/create-room-background/meteor.gif)");
+    $(document.body).css("color", "white");
+});
+$("#b8").click(function (){
+    $("#background-image").css("background-image", "url(/static/images/create-room-background/ocean.gif)");
+    $(document.body).css("color", "black");
+});
+$("#b9").click(function (){
+    $("#background-image").css("background-image", "url(/static/images/create-room-background/sky.gif)");
+    $(document.body).css("color", "black");
+});
+$("#b10").click(function (){
+    $("#background-image").css("background-image", "url(/static/images/create-room-background/robot1.jpg)");
+    $(document.body).css("color", "black");
+});
+$("#b11").click(function (){
+    $("#background-image").css("background-image", "url(/static/images/create-room-background/robot2.jpg)");
+    $(document.body).css("color", "black");
+});
+$("#b12").click(function (){
+    $("#background-image").css("background-image", "url(/static/images/create-room-background/robot3.jpg)");
+    $(document.body).css("color", "black");
+});
+</script>
+<script>
+$("button").css("color", "black");
+$("button").click(function (){
+    $(this).popover('show')
+});
+$("#material_list>button").click(function (){
+    $(this).hide()
+    var text = new $('#create_list').val()
+    $('#create_list').val(text + '  ' + $(this).text())
+});
+$("#create_program").click(function (){
+    $('#program').text("方案所需清单：" + $('#create_list').val());
+    $('#create_list').val("");
+});
+</script>
+{% endblock %}

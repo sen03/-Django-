@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block title  %}app01 文章{% endblock %}
+{% load staticfiles %}
+{% block content %}
+    <div class="container" style="background-color: aqua;<!-- overflow: auto;-->" >
+        <div class="row text-center vertical-middle-sm">
+            <h1>智能机器人创客空间</h1>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-md-8">
+                <ul>
+                    {% for app01 in app01s %}
+                        <li><a href="{{ app01s.id }}">{{ app01s.title }}</a></li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </div>
+{% endblock %}

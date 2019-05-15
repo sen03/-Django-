@@ -1,0 +1,40 @@
+{% extends "create/technology/technology-base.html" %}
+
+{% load staticfiles %}
+
+{% block title %}相关技术{% endblock %}
+
+{% block content %}
+    <div class="layui-body" style="color:white; margin-top:50px; margin-left: 110px; margin-right: 90px">
+        <br />
+        <h2 class="text-center">大数据</h2>
+        <div style="font-size:20px; padding: 15px;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp大数据（big data），指无法在一定时间范围内用常规软件工具进行捕捉、管理和处理的数据集合，是需要新处理模式才能具有更强的决策力、洞察发现力和流程优化能力的海量、高增长率和多样化的信息资产。</div>
+        <div style="font-size:20px; padding: 15px;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp在维克托·迈尔-舍恩伯格及肯尼斯·库克耶编写的《大数据时代》 [2]  中大数据指不用随机分析法（抽样调查）这样捷径，而采用所有数据进行分析处理。大数据的5V特点（IBM提出）：Volume（大量）、Velocity（高速）、Variety（多样）、Value（低价值密度）、Veracity（真实性）。</div>
+        <div style="font-size:25px; padding: 15px;">定义：</div>
+        <div style="font-size:20px; padding: 15px;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp对于“大数据”（Big data）研究机构Gartner给出了这样的定义。“大数据”是需要新处理模式才能具有更强的决策力、洞察发现力和流程优化能力来适应海量、高增长率和多样化的信息资产。</div>
+        <div style="font-size:20px; padding: 15px;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp麦肯锡全球研究所给出的定义是：一种规模大到在获取、存储、管理、分析方面大大超出了传统数据库软件工具能力范围的数据集合，具有海量的数据规模、快速的数据流转、多样的数据类型和价值密度低四大特征。</div>
+        <div style="font-size:20px; padding: 15px;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp大数据技术的战略意义不在于掌握庞大的数据信息，而在于对这些含有意义的数据进行专业化处理。换而言之，如果把大数据比作一种产业，那么这种产业实现盈利的关键，在于提高对数据的“加工能力”，通过“加工”实现数据的“增值”。</div>
+        <div style="font-size:20px; padding: 15px;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp从技术上看，大数据与云计算的关系就像一枚硬币的正反面一样密不可分。大数据必然无法用单台的计算机进行处理，必须采用分布式架构。它的特色在于对海量数据进行分布式数据挖掘。但它必须依托云计算的分布式处理、分布式数据库和云存储、虚拟化技术。</div>
+        <div style="font-size:20px; padding: 15px;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp随着云时代的来临，大数据（Big data）也吸引了越来越多的关注。分析师团队认为，大数据（Big data）通常用来形容一个公司创造的大量非结构化数据和半结构化数据，这些数据在下载到关系型数据库用于分析时会花费过多时间和金钱。大数据分析常和云计算联系到一起，因为实时的大型数据集分析需要像MapReduce一样的框架来向数十、数百或甚至数千的电脑分配工作。</div>
+        <div style="font-size:20px; padding: 15px;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp大数据需要特殊的技术，以有效地处理大量的容忍经过时间内的数据。适用于大数据的技术，包括大规模并行处理（MPP）数据库、数据挖掘、分布式文件系统、分布式数据库、云计算平台、互联网和可扩展的存储系统。</div>
+        <div style="font-size:20px; padding: 15px;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp最小的基本单位是bit，按顺序给出所有单位：bit、Byte、KB、MB、GB、TB、PB、EB、ZB、YB、BB、NB、DB。</div>
+        <div style="font-size:25px; padding: 15px;">结构：</div>
+        <div style="font-size:20px; padding: 15px;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp大数据包括结构化、半结构化和非结构化数据，非结构化数据越来越成为数据的主要部分。据IDC的调查报告显示：企业中80%的数据都是非结构化数据，这些数据每年都按指数增长60%。大数据就是互联网发展到现今阶段的一种表象或特征而已，没有必要神话它或对它保持敬畏之心，在以云计算为代表的技术创新大幕的衬托下，这些原本看起来很难收集和使用的数据开始容易被利用起来了，通过各行各业的不断创新，大数据会逐步为人类创造更多的价值。</div>
+        <div style="font-size:20px; padding: 15px;">其次，想要系统的认知大数据，必须要全面而细致的分解它，着手从三个层面来展开：</div>
+        <div style="font-size:20px; padding: 15px;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp第一层面是理论，理论是认知的必经途径，也是被广泛认同和传播的基线。在这里从大数据的特征定义理解行业对大数据的整体描绘和定性；从对大数据价值的探讨来深入解析大数据的珍贵所在；洞悉大数据的发展趋势；从大数据隐私这个特别而重要的视角审视人和数据之间的长久博弈。</div>
+        <div style="font-size:20px; padding: 15px;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp第二层面是技术，技术是大数据价值体现的手段和前进的基石。在这里分别从云计算、分布式处理技术、存储技术和感知技术的发展来说明大数据从采集、处理、存储到形成结果的整个过程。</div>
+        <div style="font-size:20px; padding: 15px;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp第三层面是实践，实践是大数据的最终价值体现。在这里分别从互联网的大数据，政府的大数据，企业的大数据和个人的大数据四个方面来描绘大数据已经展现的美好景象及即将实现的蓝图。</div>
+        <br /><br /><br />
+        <div class="text-center" style="font-size:20px; padding: 15px;">以上信息来自百度百科</div>
+        <br /><br /><br />
+    </div>
+
+    <div class="layui-footer" style="color:white; margin-top:500px; margin-left: 700px;">
+        <p>智能机器人相关技术介绍</p>
+    </div>
+<script>
+document.getElementById('self-awareness').className = 'layui-nav-item layui-nav-itemed';
+{#var li = document.getElementById('self-awareness');#}
+{#li.className = 'layui-nav-item layui-nav-itemed';#}
+</script>
+{% endblock %}

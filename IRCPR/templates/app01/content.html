@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block title %}文章{% endblock %}
+
+{% block contend %}
+<div class="row text-center vertical-middle-sm">
+    <h1>{{ article.title }}</h1>
+</div>
+<div class="row">
+    <div class="col-xs-12 col-md-8">
+        <p class="text-center">
+            <span>{{ article.author.username }}</span>
+            <span style="margin-left:20px">{{ publish }}</span>
+        </p>
+    </div>
+    <div>{{ article.body }}</div>
+</div>
+<div class="col-xsx-6 col-md-4">
+    <p>欢迎使用智能机器人创客空间</p>
+</div>
+{% endblock %}

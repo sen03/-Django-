@@ -1,0 +1,33 @@
+{% extends "create/technology/technology-base.html" %}
+
+{% load staticfiles %}
+
+{% block title %}相关技术{% endblock %}
+
+{% block content %}
+    <div class="layui-body" style="color:white; margin-top:50px; margin-left: 110px; margin-right: 90px">
+        <br />
+        <h2 class="text-center">激光雷达避障</h2>
+        <div style="font-size:20px; padding: 15px;">激光测距传感技术利用激光来测量到被测物体的距离或者被测物体的位移等参数。比较常用的测距方法是TOF激光雷达测距和三角法激光雷达测距。</div>
+        <div style="font-size:20px; padding: 15px;">TOF测距激光雷达的工作原理：</div>
+        <div style="font-size:20px; padding: 15px;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp通过电机带动旋转，将激光脉冲不断投射到障碍物同时接收反射回的激光脉冲，将光速与飞行时间差相乘，求得雷达到相应障碍物的距离。</div>
+        <img src="{% static '/images/radar1.png' %}" class="layui-layer-imgtit">
+        <div class="text-center" style="font-size:20px; padding: 15px;">TOF测距激光雷达的工作原理图</div>
+        <div style="font-size:20px; padding: 15px;">三角法测距激光雷达的工作原理：主要针对室内的中近距离测距。</div>
+        <img src="{% static '/images/radar2.png' %}">
+        <div class="text-center" style="font-size:20px; padding: 15px;">三角法测距激光雷达的工作原理图</div>
+        <br /><br /><br />
+        <div class="text-center" style="font-size:20px; padding: 15px;"></div>
+    </div>
+
+    <div class="layui-footer" style="color:white; margin-top:500px; margin-left: 700px;">
+        <p>智能机器人相关技术介绍</p>
+    </div>
+
+</div>
+<script>
+document.getElementById('autonomous-navigation').className = 'layui-nav-item layui-nav-itemed';
+{#var li = document.getElementById('autonomous-navigation');#}
+{#li.className = 'layui-nav-item layui-nav-itemed';#}
+</script>
+{% endblock %}

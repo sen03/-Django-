@@ -1,0 +1,44 @@
+{% extends "create/technology/technology-base.html" %}
+
+{% load staticfiles %}
+
+{% block title %}相关技术{% endblock %}
+
+{% block content %}
+    <div class="layui-body" style="color:white; margin-top:50px; margin-left: 110px; margin-right: 90px">
+        <br />
+        <h2 class="text-center">语音识别技术</h2>
+        <div style="font-size:20px; padding: 15px;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp语音识别技术，也被称为自动语音识别Automatic Speech Recognition，(ASR)，
+            其目标是将人类的语音中的词汇内容转换为计算机可读的输入，
+            例如按键、二进制编码或者字符序列。与说话人识别及说话人确认不同，
+            后者尝试识别或确认发出语音的说话人而非其中所包含的词汇内容。</div>
+        <div style="font-size:20px; padding: 15px;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp语音识别技术的应用包括语音拨号、语音导航、室内设备控制、语音文档检索、简单的听写数据录入等。
+            语音识别技术与其他自然语言处理技术如机器翻译及语音合成技术相结合，
+            可以构建出更加复杂的应用，例如语音到语音的翻译。</div>
+        <div style="font-size:20px; padding: 15px;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp语音识别技术所涉及的领域包括：信号处理、模式识别、概率论和信息论、发声机理和听觉机理、人工智能等等。</div>
+        <div style="font-size:25px; padding: 15px;">原理：</div>
+        <div style="font-size:20px; padding: 15px;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp语音识别系统提示客户在新的场合使用新的口令密码，这样使用者不需要记住固定的口令，系统也不会被录音欺骗。文本相关的声音识别方法可以分为动态时间伸缩或隐马尔可夫模型方法。文本无关声音识别已经被研究很长时间了，不一致环境造成的性能下降是应用中的一个很大的障碍。</div>
+        <div style="font-size:20px; padding: 15px;">其工作原理：</div>
+        <div style="font-size:20px; padding: 15px;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp动态时间伸缩方法使用瞬间的、变动倒频。1963年Bogert et al出版了《回声的时序倒频分析》。通过交换字母顺序，他们用一个含义广泛的词汇定义了一个新的信号处理技术，倒频谱的计算通常使用快速傅立叶变换。</div>
+        <div style="font-size:20px; padding: 15px;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp从1975年起，隐马尔可夫模型变得很流行。运用隐马尔可夫模型的方法，频谱特征的统计变差得以测量。文本无关语音识别方法的例子有平均频谱法、矢量量化法和多变量自回归法。</div>
+        <div style="font-size:20px; padding: 15px;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp平均频谱法使用有利的倒频距离，语音频谱中的音位影响被平均频谱去除。使用矢量量化法，语者的一套短期训练的特征向量可以直接用来描绘语者的本质特征。但是，当训练向量的数量很大时，这种直接的描绘是不切实际的，因为存储和计算的量变得离奇的大。所以尝试用矢量量化法去寻找有效的方法来压缩训练数据。Montacie et al在倒频向量的时序中应用多变量自回归模式来确定语者特征，取得了很好的效果。</div>
+        <div style="font-size:20px; padding: 15px;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp想骗过语音识别系统要有高质量的录音机，那不是很容易买到的。一般的录音机不能记录声音的完整频谱，录音系统的质量损失也必须是非常低的。对于大多数的语音识别系统，模仿的声音都不会成功。用语音识别来辨认身份是非常复杂的，所以语音识别系统会结合个人身份号码识别或芯片卡。</div>
+        <div style="font-size:20px; padding: 15px;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp语音识别系统得益于廉价的硬件设备，大多数的计算机都有声卡和麦克风，也很容易使用。但语音识别还是有一些缺点的。语音随时间而变化，所以必须使用生物识别模板。语音也会由于伤风、嗓音沙哑、情绪压力或是青春期而变化。语音识别系统比指纹识别系统有着较高的误识率，因为人们的声音不像指纹那样独特和唯一。对快速傅立叶变换计算来说，系统需要协同处理器和比指纹系统更多的效能。目前语音识别系统不适合移动应用或以电池为电源的系统。</div>
+        <br /><br /><br />
+        <div class="text-center" style="font-size:20px; padding: 15px;">以上信息来自百度百科</div>
+        <br /><br /><br />
+    </div>
+
+    <div class="layui-footer" style="color:white; margin-top:500px; margin-left: 700px;">
+        <p>智能机器人相关技术介绍</p>
+    </div>
+
+</div>
+{#<script src="/static/layui/layui.js" charset="utf-8"></script><script>#}
+{#//JavaScript代码区域#}
+{#layui.us3e('element', function(){#}
+{#  var element = layui.element;#}
+{##}
+{#});#}
+{#</script>#}
+{% endblock %}

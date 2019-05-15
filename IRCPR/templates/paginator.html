@@ -1,0 +1,19 @@
+<link rel="stylesheet" href="/static/layui/css/layui.css">
+<div id="demo"></div>
+
+<script src="/static/layui/layui.js" charset="utf-8"></script>
+<script>
+layui.use(['laypage', 'layer'], function(){
+  var laypage = layui.laypage
+  ,layer = layui.layer;
+
+  //自定义首页、尾页、上一页、下一页文本
+  laypage.render({
+    elem: 'demo'
+    ,count: 100
+    ,first: '首页'
+    ,last: '尾页'
+    ,prev: '<em>←</em>'
+    ,next: '<em>→</em>'
+  })})
+</script>

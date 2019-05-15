@@ -1,0 +1,31 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'css/self-css/self-defined.css' %}">
+</head>
+<body>
+    <link rel="stylesheet" href="{% static 'layui/css/layui.css' %}" media="all">
+    {% include "create/technology/technology-header.html" %}
+    {% include "create/technology/technology-leftslider.html" %}
+    {% block content %}{% endblock %}
+    {% block javascript %}{% endblock %}
+    <div>
+        <div id="background-image" style="background-image: url(/static/images/background/background-technology.jpg);"></div>
+    </div>
+
+<script src="{% static 'js/jquery-1.12.4.js' %}"></script>
+<script src="{% static 'js/bootstrap.js' %}"></script>
+<script src="{% static 'layui/layui.js' %}" charset="utf-8"></script>
+<script>
+layui.use('element', function(){
+  var element = layui.element;
+});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,10 @@
+{% extends "account/account_base.html" %}
+
+{% block title %}退出{% endblock %}
+
+{% block content %}
+<div class="row text-center vertial-middle-sm">
+    <p>你已经退出</p>
+    <p>你可以重新<a href="{% url 'account:user_login' %}" >登录</a></p>
+</div>
+{% endblock %}
